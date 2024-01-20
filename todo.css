@@ -6,6 +6,53 @@
 body{
     background-color: rgb(135, 211, 247);
 }
+h1{
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+    width: 350px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+
+}   
+h1::before{
+    content: "";
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    /* background: linear-gradient(70deg,skyblue,blue,purple,red); */
+    background-image: conic-gradient(skyblue,blue,180deg, transparent 300deg);
+    overflow: hidden;
+    animation: rotate 2s linear infinite;
+}
+h1::after{
+    content: "I Have To Done It😎";
+    position: absolute;
+    width: 98%;
+    height: 85%;
+    background-color: white;
+    border-radius: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: auto;
+    padding: auto;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-size: xx-large;
+    font-weight: 900;
+}
+@keyframes rotate{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(-360deg);
+    }
+}
+
 .container{
     background-color: white;
     width: 70%;
