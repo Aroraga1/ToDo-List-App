@@ -56,10 +56,13 @@ h1::after{
 .container{
     background-color: white;
     width: 70%;
+    margin-top:15px;
+    margin-bottum:15px;
     margin: auto;
     min-height: 100vh;
     padding: 30px;
     box-sizing: border-box;
+    border-radius: 20px;
 }
 
 form{
